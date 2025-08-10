@@ -7,6 +7,22 @@ A simple Node.js/Express web application for DevOps training. It features:
 - All static assets (logos) served from the app
 - Modern, clean UI
 - Dockerfile and multi-stage Dockerfile for production deployment
+- Automated tests with Jest and Supertest
+
+## Badges
+
+![Node.js CI](https://img.shields.io/badge/node.js-20%2B-brightgreen)
+![Docker](https://img.shields.io/badge/docker-ready-blue)
+![Jest](https://img.shields.io/badge/tests-passing-brightgreen)
+
+## Features
+- Node.js/Express web app
+- EJS templating
+- DevOps tool grid with logos and links
+- Modern CSS UI
+- Automated tests (Jest + Supertest)
+- Docker & multi-stage Docker support
+- Jenkinsfile for CI/CD
 
 ## Getting Started
 
@@ -28,6 +44,11 @@ Logos are downloaded automatically by running:
 chmod +x download-logos.sh && ./download-logos.sh
 ```
 
+### Run Tests
+```bash
+npm test
+```
+
 ### Docker Build & Run
 #### Single-stage
 ```bash
@@ -42,6 +63,17 @@ docker build -f Dockerfile.multi-stage -t devops-training-nodejs-multi .
 docker run -d -p 3001:3000 devops-training-nodejs-multi
 ```
 
+## CI/CD
+
+This project includes a Jenkinsfile for automated CI/CD. The pipeline performs:
+- Checkout
+- Dependency install
+- Logo download
+- Automated tests (Jest)
+- Docker and multi-stage Docker builds
+
+To use, configure your Jenkins job to use this repository and a Docker-enabled agent.
+
 ## Project Structure
 - `server.js` - Main Express server
 - `views/` - EJS templates
@@ -49,6 +81,7 @@ docker run -d -p 3001:3000 devops-training-nodejs-multi
 - `download-logos.sh` - Script to fetch DevOps tool logos
 - `Dockerfile` - Single-stage production build
 - `Dockerfile.multi-stage` - Multi-stage production build
+- `test/` - Automated tests
 
 ## License
 MIT
