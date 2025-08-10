@@ -1,0 +1,14 @@
+body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: #f4f7fa; }
+.container { max-width: 700px; margin: 60px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(30,60,114,0.08); padding: 40px 32px; text-align: center; }
+.home { background: linear-gradient(135deg,#1e3c72,#2a5298); color: #fff; }
+.home .btn { background: #fff; color: #1e3c72; }
+.tools h1 { color: #1e3c72; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; margin: 40px 0; }
+.tool-card { display: flex; flex-direction: column; align-items: center; text-decoration: none; background: #f4f7fa; border-radius: 12px; box-shadow: 0 2px 8px rgba(30,60,114,0.06); padding: 24px 0; transition: box-shadow 0.2s; }
+.tool-card:hover { box-shadow: 0 6px 24px rgba(30,60,114,0.12); }
+.tool-card img { width: 64px; height: 64px; margin-bottom: 12px; }
+.tool-card span { color: #1e3c72; font-weight: 500; font-size: 1.1rem; }
+.btn { display: inline-block; margin-top: 24px; padding: 12px 32px; background: #1e3c72; color: #fff; border-radius: 30px; text-decoration: none; font-size: 1.1rem; transition: background 0.2s; }
+.btn:hover { background: #2a5298; }
+.btn.back { background: #eee; color: #1e3c72; margin-top: 0; }
+.btn.back:hover { background: #dbeafe; }
