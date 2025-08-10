@@ -82,6 +82,3 @@ To use, configure your Jenkins job to use this repository and a Docker-enabled a
 - `Dockerfile` - Single-stage production build
 - `Dockerfile.multi-stage` - Multi-stage production build
 - `test/` - Automated tests
-
-## License
-MIT
